@@ -1,1 +1,9 @@
 <h1>Список кур'єрів</h1>
+<ul>
+  <% @couriers.each do |courier| %>
+    <li>
+      <%= courier.name%>
+      <%= courier.email%>
+    </li>
+  <% end %>
+</ul>
