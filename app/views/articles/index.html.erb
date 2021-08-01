@@ -2,8 +2,10 @@
 <ul>
   <% @couriers.each do |courier| %>
     <li>
-      <%= courier.name%>
-      <%= courier.email%>
+      <a href="/articles/<%= courier.id %>">
+        <%= courier.name%>
+        <%= courier.email%>
+      </a>
     </li>
   <% end %>
 </ul>
